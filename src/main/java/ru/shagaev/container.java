@@ -55,9 +55,12 @@ public class container {
         return index;
     }
     
-    public int get(int i)
-    {
-    	return elements[i];
+    
+    public int get(int i) {
+        if (i < 0 || i >= index) {
+            throw new IndexOutOfBoundsException("Неверный индекс");
+        }
+        return elements[i];
     }
     
     public void print()

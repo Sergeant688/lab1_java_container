@@ -11,6 +11,8 @@ public class main {
         	container.add(i);
         }
         
+        System.out.println(container.get(14));
+        
         System.out.print("Кол-во элементов в контейнере:");
         System.out.println(container.size());
         
